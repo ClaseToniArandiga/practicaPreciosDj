@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -17,9 +23,9 @@
         <span class="header__mensualAnual">Paga anualmente</span>
       </div>
       <!-- Ahorro anual -->
-      <span class="header__ahorroAnual">Ahorra 20% con el anual</span>
+      <span class="header__ahorroAnual">Ahorra 20% con el plan anual</span>
       <!-- Selector moneda EURO/USD -->
-      <div class="header__separador">
+      <div class="header__moneda">
         <span>Precio en</span>
         <select class="header__selectorMoneda" name="moneda">
           <option value="euro">€ EUR</option>
@@ -30,10 +36,62 @@
     <!-- MAIN -->
     <main class="main">
       <!-- 4 CARDS PRECIOS -->
-      <section class="card-free card"></section>
-      <section class="card-plus card"></section>
-      <section class="card-business card"></section>
-      <section class="card-enterprise card"></section>
+      <article class="card-free card">
+        <h4>Free</h4>
+        <h4><span>0 €</span> por miembro/mes</h4>
+        <p>
+          Para que todo el mundo organice su día a día y sus proyectos
+          personales.
+        </p>
+        <div class="main__btn"><a href="#">Regisrarse</a></div>
+        <ul>
+          <li>Gratis para uso individual</li>
+          <li>Formularios básicos</li>
+          <li>Sitios básicos</li>
+          <li>Notion Calendar</li>
+          <li>Notion Mail (se sincroniza con Gmail)</li>
+          <li>
+            Bases de datos que incluyen subtareas, dependencias, propiedades
+            personalizadas y mucho más
+          </li>
+        </ul>
+        <article class="main__ia-notion">
+          <div class="ia-notion__1">
+            <span class="span__ia">
+              <svg
+                class="iconNotion"
+                viewBox="0 0 20 20"
+                style="
+                  width: 20px;
+                  height: 20px;
+                  display: block;
+                  fill: inherit;
+                  flex-shrink: 0;
+                "
+              >
+                <path
+                  fill="currentColor"
+                  stroke="currentColor"
+                  d="M13.91 8.861a.75.75 0 1 1-1.48-.24.75.75 0 0 1 1.48.24ZM7.321 7.793a.75.75 0 1 1-1.48-.24.75.75 0 0 1 1.48.24Z">
+                </path>
+                <path
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M17.233 5.656a3.493 3.493 0 0 0-6.012-.031L4.99 16.027l5.412.877M9.47 3.935a3.494 3.494 0 0 0-4.969-.317"
+                ></path>
+              </svg>
+            </span>
+            <span>IA de Notion</span>
+          </div>
+          <div class="ia-notion__2"></div>
+        </article>
+      </article>
+      <article class="card-plus card"></article>
+      <article class="card-business card"></article>
+      <article class="card-enterprise card"></article>
     </main>
   </body>
 </html>
